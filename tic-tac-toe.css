@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;;
+}
+body{
+    background-color: black;
+}
+.heading{
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    color: aqua;
+}
+.game{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 36vw;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.element{
+    border: 3px solid aqua;
+    background-color: rgb(40, 40, 88);
+    width: 10vw;
+    height: 18vh;
+    border-radius: 14px;
+    margin: 11px;
+    color: yellow;
+    font-size: 3.5rem;
+    font-weight: 800;
+    box-shadow: 4px 2px 15px aqua;
+}
+.reset-btn{
+    border: 3px solid red;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(249, 36, 36);
+    font-size: 1.15rem;
+    margin: 15px 0px 0px 0px;
+    padding: 7px;
+    font-weight: 600;
+    box-shadow: 5px 3px 15px red;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.Winner{
+    color: rgb(175, 92, 253);
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+.new{
+    border: 3px solid rgb(175, 92, 253);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color:rgb(175, 92, 253) ;
+    font-size: 1.5rem;
+    margin: 15px 0px 0px 0px;
+    padding: 8px;
+    font-weight: 600;
+    box-shadow: 5px 3px 15px rgb(175, 92, 253);
+}
+.hide{
+    display: none;
+}
+@media only screen and (max-width:1100px){
+    .game{
+        height: 65vh;
+    }
+    .container{
+        width: 44vw;
+        height: 50vh;
+    }
+    .element{
+        width: 10vw;
+        height: 13vh;
+        border-radius: 12px;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    .heading{
+        color: aqua;
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width:800px){
+    .game{
+        height: 55vh;
+    }
+    .container{
+        width: 44vw;
+        height: 40vh;
+    }
+    .element{
+        width: 9.5vw;
+        height: 10vh;
+        border-radius: 11px;
+        font-size: 2rem;
+    }
+    .heading{
+        color: aqua;
+        font-size: 2.5rem;
+    }
+    .Winner{
+        font-size: 5rem;
+        font-weight: 900;
+    }
+    .new{
+        border-radius: 10px;
+        font-size: 1.25rem;
+        margin: 15px 0px 0px 0px;
+        padding: 7px;
+    }
+}
+@media only screen and (max-width:600px){
+    .game{
+        height: 40vh;
+    }
+    .container{
+        width: 44vw;
+        height: 25vh;
+    }
+    .element{
+        width: 8.5vw;
+        height: 8vh;
+        border-radius: 9px;
+        font-size: 1.25rem;
+
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .Winner{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    .reset-btn{
+        font-size: 0.75rem;
+        padding: 5px;
+        margin: 35px 0px 0px 0px;
+    }
+}
+@media only screen and (max-width:450px){
+    .game{
+        height: 35vh;
+    }
+    .container{
+        width: 55vw;
+        height: 25vh;
+    }
+    .element{
+        width: 9vw;
+        height: 7vh;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .heading{
+        color: aqua;
+        font-size: 1.75rem;
+        font-weight: 800;
+    }
+    .Winner{
+        font-size: 3.75rem;
+        font-weight: 900;
+    }
+    .new{
+        border: 3px solid rgb(175, 92, 253);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin: 15px 0px 0px 0px;
+        padding: 6px;
+    }
+}
