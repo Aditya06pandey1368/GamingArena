@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    background-image: url(https://media.istockphoto.com/id/1207017851/vector/game-background-with-gamepad-and-graphic-elements-joystick-sign-outline-design.jpg?s=612x612&w=0&k=20&c=GruqkCPCk5t3-eoCsUySViGHy6p57ul0ob2M6DMYvhw=);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #20232a;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #61dafb;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.games-list h2 {
+    margin: 20px auto;
+    font-size: 2rem;
+    color: rgb(231, 255, 52);
+    background-color: black;
+    max-width: 400px;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.game-card {
+    background-color:#CA2C92;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(218, 29, 29, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card img {
+    width: 95%;
+    height: 84%;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+    color: rgb(224, 255, 46);
+    font-weight: 900;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #20232a;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #61dafb;
+}
+
+@media (max-width: 768px) {
+    .games-container {
+        grid-template-columns: 1fr;
+    }
+
+    .game-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .games-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
