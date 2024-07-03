@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url(https://w0.peakpx.com/wallpaper/440/913/HD-wallpaper-snake-pass-and-background-snake-game.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(rgb(5, 140, 2) , rgb(185, 255, 144));
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+#scoreBox{
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    font-size: 33px;
+    font-weight: 800;
+}
+#highScoreBox{
+    position: absolute;
+    top: 57px;
+    right: 115px;
+    font-size: 33px;
+    font-weight: 800;
+}
+
+.snake{
+    background-color: rgb(243, 140, 140);
+    border: 1px solid black;
+    border-radius: 13px;
+}
+
+.head{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 9px;
+    transform: scale(1.04);
+}
+
+.food{
+    background: linear-gradient(rgb(48, 48, 252) , rgb(199, 54, 248));
+    border: 1px solid black;
+    border-radius: 15px;
+}
