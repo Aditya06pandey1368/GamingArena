@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #faf8ef;
+}
+
+#game-container {
+    text-align: center;
+    position: relative;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#score, #high-score {
+    font-size: 24px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    background-color: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #776e65;
+    border-radius: 5px;
+}
+
+.cell[data-value="2"] { background-color: #eee4da; color: #776e65; }
+.cell[data-value="4"] { background-color: #ede0c8; color: #776e65; }
+.cell[data-value="8"] { background-color: #f2b179; color: #f9f6f2; }
+.cell[data-value="16"] { background-color: #f59563; color: #f9f6f2; }
+.cell[data-value="32"] { background-color: #f67c5f; color: #f9f6f2; }
+.cell[data-value="64"] { background-color: #f65e3b; color: #f9f6f2; }
+.cell[data-value="128"] { background-color: #edcf72; color: #f9f6f2; }
+.cell[data-value="256"] { background-color: #edcc61; color: #f9f6f2; }
+.cell[data-value="512"] { background-color: #edc850; color: #f9f6f2; }
+.cell[data-value="1024"] { background-color: #edc53f; color: #f9f6f2; }
+.cell[data-value="2048"] { background-color: #edc22e; color: #f9f6f2; }
+
+#lost-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#lost-screen p {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+#lost-screen button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f67c5f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

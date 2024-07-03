@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="2048.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="score-container">
+            <div id="score">Score: 0</div>
+            <div id="high-score">High Score: 0</div>
+        </div>
+        <div id="game-board"></div>
+        <div id="lost-screen">
+            <p>You Lost!</p>
+            <button onclick="restartGame()">Try Again</button>
+        </div>
+    </div>
+    <script src="2048.js"></script>
+</body>
+</html>
